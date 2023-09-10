@@ -1,0 +1,20 @@
+﻿<Window x:Class="LammonsP6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LammonsP6"
+        mc:Ignorable="d"
+        Title="LammonsP6 Command Pattern Inventory" Height="380" Width="600">
+    <Grid>
+        <Label Content="Hayden Lammon's Command Pattern Inventory" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="550" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Enter Item Name" HorizontalAlignment="Left" Margin="35,100,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button x:Name="btnAddOne" Content="Add One" HorizontalAlignment="Left" Margin="20,153,0,0" VerticalAlignment="Top" Width="131" Click="btnAddOne_Click"/>
+        <Button x:Name="btnRandomAmt" Content="Add random amount" HorizontalAlignment="Left" Margin="20,178,0,0" VerticalAlignment="Top" Width="131" Click="btnRandomAmt_Click"/>
+        <Button x:Name="btnUndo" Content="Undo" HorizontalAlignment="Left" Margin="20,202,0,0" VerticalAlignment="Top" Width="131" Click="btnUndo_Click"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="20,130,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="131"/>
+        <Label Content="Inventory List" HorizontalAlignment="Left" Margin="235,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.231,-0.095"/>
+        <ListBox x:Name="lbInventory" d:ItemsSource="{Binding inventoryItems}" Margin="235,130,30,28"/>
+
+    </Grid>
+</Window>
